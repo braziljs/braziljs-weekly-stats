@@ -2,13 +2,14 @@ import React from 'react'
 import 'isomorphic-fetch'
 import _ from 'lodash'
 import UserList from './user_list'
+import Loading from './loader.js'
 
 const github_url_api = 'https://api.github.com/repos/braziljs/weekly/issues/'
 const client_id = process.env.CLIENT_ID
 const client_secret = process.env.CLIENT_SECRET
-const issuesFrom = 161
+const issuesFrom = 160// 136
 const issuesTo = 161
-const invalidId = 72206
+const invalidIds = new Set([72206, 347387]) // jaydson e felipenmoura
 
 let users = {}
 let topUsers = []
@@ -27,22 +28,53 @@ export default class BrazilJSWeeklyTopUsers extends React.Component {
 			let comments = await getGitHubIssueComments(i)
 			comments.map((comment) => {
 				const id = comment.user.id
-				if (id !== invalidId) {
+				if (!invalidIds.has(id)) { // !== invalidId) {
 					users[id] = users[id] || Object.assign(comment.user, {count: 0})
 					users[id].count ++
 				}
 			})
 		}
 		let sortedUsers = _.sortBy(users, (o) => -o.count)
-		topUsers.push(sortedUsers[0], sortedUsers[1], sortedUsers[2])
+		topUsers.push(...sortedUsers) //[0], sortedUsers[1], sortedUsers[2])
+//        topUsers = sortedUsers
 		return { users:  topUsers}
 	}
+  
+//    static async getInitialProps () {
+//      
+//    }
 
 	render () {
 		return (
-			<div>
-				<p>BrazilJS Weekly top users</p> 
-				<UserList users={this.props.users}/>
+			<div className='wrapper'>
+                <style global jsx>{`
+*, *:before, *:after { box-sizing: border-box; }
+body, html {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+//  margin-top: -8px;
+  background-color: #FBFCFF;
+  font-family: Sans-serif, Arial, Tahoma;
+}
+body {
+  padding-top: 40px;
+  background-image: url('/static/bg2.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+.wrapper {
+  width: 90%;
+  height: 100%;
+  max-width: 400px;
+  margin: auto;
+}
+                `}</style>
+                {
+                  this.props.users
+                    ? <UserList users={this.props.users}/>
+                    : <Loading />
+                }
 			</div>
 		)
 	}
