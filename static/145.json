@@ -1,0 +1,30 @@
+[
+  {
+    "url": "https://api.github.com/repos/braziljs/weekly/issues/comments/287335466",
+    "html_url": "https://github.com/braziljs/weekly/issues/145#issuecomment-287335466",
+    "issue_url": "https://api.github.com/repos/braziljs/weekly/issues/145",
+    "id": 287335466,
+    "user": {
+      "login": "dnstld",
+      "id": 3258939,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/3258939?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dnstld",
+      "html_url": "https://github.com/dnstld",
+      "followers_url": "https://api.github.com/users/dnstld/followers",
+      "following_url": "https://api.github.com/users/dnstld/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dnstld/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dnstld/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dnstld/subscriptions",
+      "organizations_url": "https://api.github.com/users/dnstld/orgs",
+      "repos_url": "https://api.github.com/users/dnstld/repos",
+      "events_url": "https://api.github.com/users/dnstld/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dnstld/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2017-03-17T11:53:46Z",
+    "updated_at": "2017-03-17T11:53:46Z",
+    "body": "Como devem ter percebido, fiz merda hehe\r\nJá postei no lugar certo.\r\nAbraços"
+  }
+]

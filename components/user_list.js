@@ -1,6 +1,6 @@
 import React from 'react'
 import User from './user'
-import Champion from './champion.js'
+import Champion from './champion'
 
 class UserList extends React.Component {
 	render() {

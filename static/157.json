@@ -1,0 +1,30 @@
+[
+  {
+    "url": "https://api.github.com/repos/braziljs/weekly/issues/comments/305662448",
+    "html_url": "https://github.com/braziljs/weekly/issues/157#issuecomment-305662448",
+    "issue_url": "https://api.github.com/repos/braziljs/weekly/issues/157",
+    "id": 305662448,
+    "user": {
+      "login": "jaydson",
+      "id": 72206,
+      "avatar_url": "https://avatars0.githubusercontent.com/u/72206?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jaydson",
+      "html_url": "https://github.com/jaydson",
+      "followers_url": "https://api.github.com/users/jaydson/followers",
+      "following_url": "https://api.github.com/users/jaydson/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jaydson/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jaydson/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jaydson/subscriptions",
+      "organizations_url": "https://api.github.com/users/jaydson/orgs",
+      "repos_url": "https://api.github.com/users/jaydson/repos",
+      "events_url": "https://api.github.com/users/jaydson/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jaydson/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2017-06-02T01:14:09Z",
+    "updated_at": "2017-06-02T01:14:09Z",
+    "body": "Done."
+  }
+]
