@@ -3,7 +3,7 @@ import React from 'react'
 class User extends React.Component {
   
   render() {
-    return <div className={'user-container ' + (this.props.i < 2 ? 'among-first': '') }>
+    return <div className={`user-container ${this.props.i < 2 ? 'among-first': ''}`}>
       <style jsx>{`
 .user-container {
   margin: 0;
@@ -74,7 +74,7 @@ class User extends React.Component {
         this.props.i < 2
           ? <div className='user-trophy'>
             <img src={
-              '/static/trophy-' + (this.props.i === 0 ? 'silver' : 'bronze') + '.png'
+              `/static/trophy-${this.props.i === 0 ? 'silver' : 'bronze'}.png`
             } />
           </div>
           : <div className='user-trophy' />
